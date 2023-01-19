@@ -23,13 +23,13 @@ function regresiva(numero){
     document.write("<table>");
         document.write("<thead>");
             document.write("<tr>");
-                document.write("<th>Número</th>")
+            document.write("<th>Número</th>")
             document.write("</tr>");
         document.write("<thead>")
-    for (let i = numero; i > 0; i--) { // muestra 0, luego 1, luego 2
+    for (let i = numero; i > 0; i--) {
         document.write("<tr>");
             document.write("<td>");
-		    document.write(i);
+		document.write(i);
             document.write("</td>");
 		document.write("</tr>");
         }
@@ -42,6 +42,7 @@ la sumatoria de todos los números pares contenidos en el rango.*/
 function punto3(tope){
     sum = 0;
     for (let index = 11; index < tope; index++) {
+        document.write(index);
         if(index%2 == 0){
             sum = sum + index;
         }
